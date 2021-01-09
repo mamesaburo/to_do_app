@@ -2,5 +2,5 @@
 <%= link_to "CREATE NEW TASK", new_task_path %>
 <h2>【TASK LIST】</h2>
 <% @tasks.each do |task| %>
-  <p>・<%= task.memo %><p>
+  <p>・<%= task.memo %><%= link_to "DELETE", task_path(@task.id), method: :delete %><p>
 <% end %>
