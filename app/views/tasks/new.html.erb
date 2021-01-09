@@ -1,0 +1,5 @@
+<h2>CREATE NEW TASK</h2>
+<%=form_with model: @task, local: true do |f| %>
+  <p><%= f.text_field :memo %></p>
+  <p><%= f.submit "CREATE" %></p>
+<% end %>
