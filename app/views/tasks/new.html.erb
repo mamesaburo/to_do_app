@@ -1,5 +1,9 @@
-<h2>CREATE NEW TASK</h2>
-<%=form_with model: @task, local: true do |f| %>
-  <p><%= f.text_field :memo, class: "form-control" %></p>
-  <p><%= f.submit "CREATE", class: "btn btn-outline-dark" %></p>
-<% end %>
+<div class="contents">
+  <div class="first-view">
+    <h2 class="title">CREATE NEW TASK</h2>
+    <%=form_with model: @task, local: true do |f| %>
+      <p><%= f.text_field :memo, class: "form-control" %></p>
+      <p><%= f.submit "CREATE", class: "btn btn-outline-dark" %></p>
+    <% end %>
+  </div>
+</div>
